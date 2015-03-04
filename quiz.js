@@ -5,11 +5,15 @@ questionsArray = [{question1:"What is Grumpy Cat's real name?", answer1:"C"},
 {question5:"What cranky internet cat died in 2014?", answer5:"B"}]
 
 
-// What is Grumpy Cat's real name?
-// A. Jeffrey
-// B. Glenda
-// C. Tartar Sauce
-// D. Cocktail Sauce
+var answer = prompt("Welcome to The Famous Cat Quiz\nHere's the first question:\nWhat is Grumpy Cat's real name?\nA. Jeffrey\nB. Glenda\nC. Tartar Sauce\nD. Cocktail Sauce")
+var answer = answer.toUpperCase();
+
+if (answer === questionsArray[0].answer1) {
+  alert("Good job, you got it! On to the next question.")
+} else {
+  alert("Oops. The answer was Tartar Sauce. Better luck on the next one.")
+}
+
 
 // Which one of these is not a famous internet cat?
 // A. Michael Jordan
