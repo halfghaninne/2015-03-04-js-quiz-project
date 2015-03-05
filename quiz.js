@@ -57,7 +57,8 @@ if (answer === questionsArray[4].answer5) {
   alert("You can't win 'em all. Click OK to see your final score.")
 }
 
-alert("You got " + counter + "/5 right.")
+var percentage = (counter/5) * 100;
+alert("You got " + counter + "/5 right. That's a " + percentage + "%. Not bad." )
 
 
 
